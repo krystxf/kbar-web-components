@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + Lit + TS</title>
+        <link rel="stylesheet" href="./src/index.css" />
+        <script type="module" src="/src/kbar-provider.ts"></script>
+        <script type="module" src="/src/kbar-overlay.ts"></script>
+        <script type="module" src="/src/kbar-modal.ts"></script>
+        <script type="module" src="/src/kbar-positioner.ts"></script>
+        <script type="module" src="/src/kbar-search.ts"></script>
+        <script type="module" src="/src/kbar-results.ts"></script>
+    </head>
+    <body>
+        <kbar-provider>
+            <kbar-overlay></kbar-overlay>
+            <kbar-positioner>
+                <kbar-modal>
+                    <kbar-search></kbar-search>
+                    <kbar-results></kbar-results>
+                </kbar-modal>
+            </kbar-positioner>
+        </kbar-provider>
+    </body>
+</html>
